@@ -1,0 +1,7 @@
+@startuml
+title Sequence diagram
+Browser -> AAD : login
+AAD --> Browser : token
+Browser -> GraphAPI : token
+GraphAPI --> Browser : my profile
+@enduml
